@@ -148,7 +148,7 @@ function crearDinamico (){
 function crearBackticks (){
   heroes2.forEach(element => {
     let contenido = `
-    <div>
+    <div class="fadeIn animated">
       <form>
         <h2>${element.nombre}</h2>
         <img src=${element.img}></img>
