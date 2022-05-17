@@ -118,7 +118,7 @@ let heroes2 = [
 let datos2 = JSON.parse(localStorage.getItem("DatosPerfil")); */
 
 function crearDinamico (){
-
+  perfil.innerHTML = "";   //limpia el div contenedor antes de guardar los nuevos 
   heroes2.forEach(element =>{
 
   let div = document.createElement("div");
@@ -146,6 +146,7 @@ function crearDinamico (){
 
 
 function crearBackticks (){
+  perfil.innerHTML = "";   //limpia el div contenedor antes de guardar los nuevos 
   heroes2.forEach(element => {
     let contenido = `
     <div class="fadeIn animated">

@@ -29,7 +29,7 @@
 #perfil {
   display: flex;
   flex-wrap: wrap;
-  background: linear-gradient(#000046, #1cb5e0);   
+  background: linear-gradient(#21216e, #1cb5e0);   
 }
 
 
@@ -46,4 +46,11 @@
 
 #perfil img {
   border: solid 1px black;
+}
+
+#perfil p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.3rem;
+  color: black;
+  padding: 0px 10px;
 }
