@@ -29,7 +29,9 @@
 #perfil {
   display: flex;
   flex-wrap: wrap;
+  background: linear-gradient(#000046, #1cb5e0);   
 }
+
 
 #perfil div {
   max-width: 25%;
@@ -37,6 +39,9 @@
 
 #perfil h2 {
   text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+
 }
 
 #perfil img {

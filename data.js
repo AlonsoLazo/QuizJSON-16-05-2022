@@ -159,3 +159,8 @@ function crearBackticks (){
   perfil.innerHTML += contenido;
   });
 }
+
+function limpiar() {
+perfil.innerHTML=""
+  
+}
