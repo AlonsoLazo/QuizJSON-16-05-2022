@@ -25,3 +25,20 @@
 .fadeIn {
   animation-name: fadeIn;
 }
+
+#perfil {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#perfil div {
+  max-width: 25%;
+}
+
+#perfil h2 {
+  text-align: center;
+}
+
+#perfil img {
+  border: solid 1px black;
+}

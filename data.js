@@ -113,3 +113,49 @@ let heroes2 = [
   }
 ]
 
+/* localStorage.setItem("DatosPerfil",JSON.stringify(heroes2));
+
+let datos2 = JSON.parse(localStorage.getItem("DatosPerfil")); */
+
+function crearDinamico (){
+
+  heroes2.forEach(element =>{
+
+  let div = document.createElement("div");
+  let form = document.createElement("form");
+  let nombreHeroe = document.createElement("h2");
+  let imagenHeroe = document.createElement("img");
+  let infoHeroe = document.createElement("p");
+
+  nombreHeroe.innerHTML = `${element.nombre}`;
+  
+  imagenHeroe.src = `${element.img}`;
+
+  infoHeroe.innerHTML = `${element.bio}`;
+
+  form.appendChild(nombreHeroe);
+  form.appendChild(imagenHeroe);
+  form.appendChild(infoHeroe);
+
+  div.appendChild(form);
+
+  perfil.appendChild(div);
+  });
+
+};
+
+
+function crearBackticks (){
+  heroes2.forEach(element => {
+    let contenido = `
+    <div>
+      <form>
+        <h2>${element.nombre}</h2>
+        <img src=${element.img}></img>
+        <p>${element.bio}</p>
+      </form>
+    </div>
+    `
+  perfil.innerHTML += contenido;
+  });
+}
